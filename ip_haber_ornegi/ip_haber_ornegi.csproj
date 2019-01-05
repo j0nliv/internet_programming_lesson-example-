@@ -69,8 +69,20 @@
   <ItemGroup>
     <Content Include="Admin.aspx" />
     <None Include="db\database.accdb" />
+    <Content Include="EditNews.aspx" />
     <Content Include="Login.aspx" />
     <Content Include="Register.aspx" />
+    <Content Include="style\css\bootstrap-grid.css" />
+    <Content Include="style\css\bootstrap-grid.min.css" />
+    <Content Include="style\css\bootstrap-reboot.css" />
+    <Content Include="style\css\bootstrap-reboot.min.css" />
+    <Content Include="style\css\bootstrap.css" />
+    <Content Include="style\css\bootstrap.min.css" />
+    <Content Include="style\js\bootstrap.bundle.js" />
+    <Content Include="style\js\bootstrap.bundle.min.js" />
+    <Content Include="style\js\bootstrap.js" />
+    <Content Include="style\js\bootstrap.min.js" />
+    <Content Include="Timeline.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -80,6 +92,13 @@
     </Compile>
     <Compile Include="Admin.aspx.designer.cs">
       <DependentUpon>Admin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EditNews.aspx.cs">
+      <DependentUpon>EditNews.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EditNews.aspx.designer.cs">
+      <DependentUpon>EditNews.aspx</DependentUpon>
     </Compile>
     <Compile Include="Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>
@@ -96,9 +115,26 @@
     <Compile Include="Register.aspx.designer.cs">
       <DependentUpon>Register.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Timeline.aspx.cs">
+      <DependentUpon>Timeline.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Timeline.aspx.designer.cs">
+      <DependentUpon>Timeline.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+    <Content Include="style\css\bootstrap-grid.css.map" />
+    <Content Include="style\css\bootstrap-grid.min.css.map" />
+    <Content Include="style\css\bootstrap-reboot.css.map" />
+    <Content Include="style\css\bootstrap-reboot.min.css.map" />
+    <Content Include="style\css\bootstrap.css.map" />
+    <Content Include="style\css\bootstrap.min.css.map" />
+    <Content Include="style\js\bootstrap.bundle.js.map" />
+    <Content Include="style\js\bootstrap.bundle.min.js.map" />
+    <Content Include="style\js\bootstrap.js.map" />
+    <Content Include="style\js\bootstrap.min.js.map" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

@@ -12,7 +12,7 @@ namespace ip_haber_ornegi
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            Session.RemoveAll();
         }
 
         protected void Button1_Click(object sender, EventArgs e)

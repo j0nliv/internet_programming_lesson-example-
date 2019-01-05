@@ -21,6 +21,17 @@ namespace ip_haber_ornegi
             {
                 lblAuthor.Text = "Hoşgeldin "+ Session["user"].ToString();
                 txtAuthor.Text = Session["user"].ToString();
+                OleDbConnection connection = new OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" + Server.MapPath("~/db/database.accdb"));
+                connection.Open();
+
+                OleDbCommand cmd = new OleDbCommand("select * from news where news_author = '"+ Session["user"].ToString() + "' ", connection);
+                OleDbDataReader reader = cmd.ExecuteReader();
+
+                Repeater1.DataSource = reader;
+                Repeater1.DataBind();
+
+                reader.Close();
+                connection.Close();
             }
 
         }
@@ -49,7 +60,6 @@ namespace ip_haber_ornegi
             txtAuthor.Text = "";
             txtContent.Text = "";
             txtHeader.Text = "";
-            GridView1.DataBind();
         }
     }
 }
